@@ -1,0 +1,274 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+  
+ 
+}
+/* Navbar */
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px; background: #333; color: #fff;
+}
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin: 0 15px; }
+.nav-links a { color: #fff; text-decoration: none; }
+.menu-toggle { display: none; cursor: pointer; }
+
+
+/* Hero */
+.hero {
+  background: url('assets/hero_bg.webp') no-repeat center center/cover;
+  color: #c95f08; text-align: center; padding: 100px 20px;
+}
+.hero h1 { font-size: 2.5rem; }
+.hero .btn {
+  display: inline-block; margin-top: 20px; padding: 10px 20px;
+  background: #ff6600; color: #fff; text-decoration: none; border-radius: 5px;
+}
+
+/* Services */
+.services {
+  padding: 50px 20px;
+  text-align: center;
+}
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-card {
+  background: #f4f4f4;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+.service-card img {
+  margin-bottom: 10px;
+}
+/* Tracking */
+.tracking {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+.tracking form {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+}
+.tracking input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+.tracking button {
+  padding: 10px 20px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+#trackingResult {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* About Page */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.about p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Contact Page */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+}
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact input,
+.contact textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.contact textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.contact button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+.contact button:hover {
+  background: #e65c00;
+}
+.chat-toggle {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chatbot-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;       
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;  
+  text-align: center;     
+}
+#chatbot h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+
+
+
+.chat-header {
+  background: #ff6600;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-close {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.chat-body {
+height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.chat-footer {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+#chatInput {
+  flex: 1;
+  border: none;
+  padding: 8px;
+}
+
+.chat-footer button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .contact form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
