@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TransLogix - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">TransLogix</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+       
+      </ul>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </nav>
+  </header>
+
+<!-- Hero -->
+  <section class="hero">
+    <h1>Reliable Logistics & Transport Solutions</h1>
+    <p>We deliver your goods safely and on time.</p>
+    <a href="about.html" class="btn">Learn More</a>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+      <div class="service-card">
+        <img src="assets/freight.png" alt="Freight Transport Icon" width="80">
+        <h3>Freight Transport</h3>
+        <p>Efficient road, rail, and air freight solutions.</p>
+      </div>
+      <div class="service-card">
+        <img src="assets/Warehousing.png" alt="Warehousing Icon" width="80">
+        <h3>Warehousing</h3>
+        <p>Secure storage facilities with real-time tracking.</p>
+      </div>
+      <div class="service-card">
+        <img src="assets/supplychain.webp" alt="Supply Chain Icon" width="80">
+        <h3>Supply Chain</h3>
+        <p>End-to-end logistics management for businesses.</p>
+      </div>
+    </div>
+    </section>
+    
+
+  <!-- Tracking -->
+  <section class="tracking">
+    <h2>Track Your Shipment</h2>
+    <form id="trackingForm">
+      <input type="text" id="trackingID" placeholder="Enter Tracking ID" required>
+      <button type="submit">Track</button>
+    </form>
+    <div id="trackingResult"></div>
+   
+  
+</section>
+<section id="chatbot">
+  <h2>Chat with Us</h2>
+  <div class="chatbot-container">
+    <div class="chat-header">TransLogix Chatbot</div>
+    <div class="chat-body" id="chatBody"></div>
+    <form class="chat-footer" id="chatForm">
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+
+ 
+
+
+  </section>
+  
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TransLogix. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
